@@ -1,0 +1,39 @@
+@font-face {
+  font-family: "iconfont"; /* Project id 3262372 */
+  src: url('iconfont.woff2?t=1647779282997') format('woff2'),
+       url('iconfont.woff?t=1647779282997') format('woff'),
+       url('iconfont.ttf?t=1647779282997') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-moreunfold:before {
+  content: "\e6a6";
+}
+
+.icon-Youtube:before {
+  content: "\e880";
+}
+
+.icon-twitter:before {
+  content: "\e882";
+}
+
+.icon-soundcloud:before {
+  content: "\e777";
+}
+
+.icon-netease-cloud-music-line:before {
+  content: "\eeaa";
+}
+
+.icon-JamIconsbeatport:before {
+  content: "\edfd";
+}
+
