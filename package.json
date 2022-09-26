@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "eslint",
-    "start": "vite serve src --port 1234",
-    "build": "vite build src"
+    "start": "vite --port 1234",
+    "build": "vite build"
   },
   "repository": {
     "type": "git",

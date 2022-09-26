@@ -11,7 +11,7 @@ require('NeteaseCloudMusicApi').playlist_detail({ id: 2622807221, s: 0 }).then(v
     </div>`
   })
   const first = value.body.playlist.tracks[0]
-  writeFileSync('src/index.html', readFileSync('index.template.html', 'utf-8')
+  writeFileSync('index.html', readFileSync('index.template.html', 'utf-8')
     .replace('%%year%%', new Date().setFullYear())
     .replace('%%tracks%%', tracks)
     .replace('%%background%%', first.al.picUrl)
