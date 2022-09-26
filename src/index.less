@@ -15,7 +15,12 @@ body {
 }
 
 a {
-  text-decoration: none;
+  text-decoration: underline rgba(255, 255, 255, 0);
+  transition: .3s;
+
+  &:hover {
+    text-decoration: underline #fff;
+  }
 }
 
 header {
@@ -29,6 +34,13 @@ header {
   left: 0;
   right: 0;
   z-index: 1;
+  
+  .logo {
+    font-weight: bold;
+    font-size: 19px;
+    display: flex;
+    align-items: center;
+  }
 
   img {
     width: 50px;
@@ -98,7 +110,6 @@ header {
 
     img {
       width: 350px;
-      max-width: 80vw;
       box-shadow: 0 5px 5px -3px rgba(0,0,0,.2),0 8px 10px 1px rgba(0,0,0,.14),0 3px 14px 2px rgba(0,0,0,.12);
     }
   }
@@ -180,12 +191,12 @@ main {
     justify-content: center;
 
     & > div {
+      width: 250px;
       margin: 0 30px 30px 0;
     }
 
     img {
-      width: 250px;
-      max-width: 70vw;
+      width: inherit;
       box-shadow: 0 2px 4px -1px rgba(0,0,0,.2),0 4px 5px 0 rgba(0,0,0,.14),0 1px 10px 0 rgba(0,0,0,.12);
     }
 
