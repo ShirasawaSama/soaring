@@ -33,10 +33,10 @@ jobs:
           node-version: 18
 
       - name: Install npm dependencies
-        run: npm install vite
+        run: npm install --production
 
       - name: Build app
-        run: npm run build
+        run: node index && npm run build
 
       - name: Deploy
         uses: crazy-max/ghaction-github-pages@v3
